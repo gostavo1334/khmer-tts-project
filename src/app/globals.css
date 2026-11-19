@@ -1,0 +1,658 @@
+/* ==========================================================================
+   Rainy Tech Design System (Cloned from https://rainytech.dev/#contact)
+   Applied to Khmer Pro AI Voice Studio & Khmer Alphabet Learning App
+   ========================================================================== */
+
+:root {
+  /* Rainy Tech Iconic Color Palette */
+  --bg: #0f0d0e;
+  --text: #faf5dc;
+  --surface: #232122;
+  --surface-hover: #2c292a;
+  --surface-alt: #171516;
+  --yellow: #f4c152;
+  --blue: #4eadd1;
+  --pink: #e58da6;
+  --green: #4da968;
+  --line: rgba(255, 255, 255, 0.09);
+  --line-strong: rgba(255, 255, 255, 0.18);
+  --text-muted: #aaa298;
+
+  /* Typography */
+  --font-heading: 'Lilita One', 'Cubano', system-ui, sans-serif;
+  --font-ui: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --font-khmer: 'Hanuman', 'Noto Sans Khmer', system-ui, sans-serif;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 36px;
+  --spacing-2xl: 60px;
+
+  /* Borders & Radius */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-pill: 50px;
+
+  /* Shadows */
+  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.4);
+  --shadow-btn: 5px 5px rgba(255, 255, 255, 0.06);
+  --shadow-btn-hover: 6px 8px rgba(244, 193, 82, 0.25);
+
+  color-scheme: dark;
+}
+
+/* Reset and base */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  background-color: var(--bg);
+  color: var(--text);
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-ui);
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Container wrapper (Rainy Tech .wrap) */
+.wrap {
+  width: min(1200px, 100% - 48px);
+  margin-inline: auto;
+}
+
+@media (max-width: 640px) {
+  .wrap {
+    width: calc(100% - 32px);
+  }
+}
+
+/* Utility color classes */
+.pink { color: var(--pink) !important; }
+.yellow { color: var(--yellow) !important; }
+.blue { color: var(--blue) !important; }
+.green { color: var(--green) !important; }
+
+/* Headings */
+h1, h2, h3, h4, .font-heading {
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  color: var(--text);
+}
+
+/* ==========================================================================
+   Header & Navigation (Rainy Tech Style)
+   ========================================================================== */
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(15, 13, 14, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--line);
+  padding: 16px 0;
+  transition: all 0.2s ease;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.logo-badge {
+  width: 44px;
+  height: 44px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.brand-text h1 {
+  font-size: 24px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
+
+.brand-subtitle {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* Live Server Status Pill */
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-pill);
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--text-muted);
+}
+
+.status-dot.online {
+  background: var(--green);
+  box-shadow: 0 0 10px var(--green);
+}
+
+.status-dot.offline {
+  background: var(--pink);
+}
+
+/* ==========================================================================
+   Navigation Tabs (Rainy Tech Pill Nav)
+   ========================================================================== */
+.nav-section {
+  padding: 24px 0 36px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-pills {
+  display: inline-flex;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-pill);
+  padding: 6px;
+  gap: 6px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+.nav-pill-btn {
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 10px 22px;
+  border-radius: var(--radius-pill);
+  border: none;
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-pill-btn:hover {
+  color: var(--yellow);
+  transform: translateY(-2px);
+}
+
+.nav-pill-btn.active {
+  background: var(--yellow);
+  color: #171516;
+  box-shadow: 0 4px 14px rgba(244, 193, 82, 0.35);
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   Rainy Tech Buttons (.button)
+   ========================================================================== */
+.button {
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  text-align: center;
+  background: var(--yellow);
+  color: #171516;
+  border: 0;
+  border-radius: var(--radius-pill);
+  justify-content: center;
+  align-items: center;
+  min-height: 52px;
+  padding: 14px 28px;
+  font-size: 15px;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: transform 0.16s ease, box-shadow 0.16s ease;
+  display: inline-flex;
+  box-shadow: var(--shadow-btn);
+  text-decoration: none;
+  gap: 8px;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-btn-hover);
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.button.outline {
+  background: transparent;
+  color: var(--yellow);
+  border: 2px solid var(--yellow);
+}
+
+.button.outline:hover {
+  background: var(--yellow);
+  color: #171516;
+}
+
+.button.secondary {
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--line);
+}
+
+.button.secondary:hover {
+  border-color: var(--yellow);
+  color: var(--yellow);
+  transform: translateY(-2px);
+}
+
+.button.full {
+  width: 100%;
+}
+
+.button.small {
+  min-height: 38px;
+  padding: 8px 16px;
+  font-size: 13px;
+}
+
+.button.danger {
+  background: var(--pink);
+  color: #171516;
+}
+
+/* ==========================================================================
+   Rainy Tech Contact / Voice Studio Section (Exact Clone of #contact)
+   ========================================================================== */
+.contact {
+  border-top: 1px solid var(--line);
+  grid-template-columns: 1fr 1.25fr;
+  gap: 70px;
+  padding: 70px 0 90px;
+  display: grid;
+}
+
+@media (max-width: 900px) {
+  .contact {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 50px 0 70px;
+  }
+}
+
+.contact-kicker {
+  font-family: var(--font-heading);
+  font-size: 14px;
+  letter-spacing: 0.12em;
+  color: var(--yellow);
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+
+.contact h2 {
+  font-size: 46px;
+  line-height: 1.1;
+  margin-bottom: 22px;
+}
+
+@media (max-width: 640px) {
+  .contact h2 {
+    font-size: 34px;
+  }
+}
+
+.contact-lede {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--text);
+  margin-bottom: 24px;
+  max-width: 440px;
+}
+
+.contact-note {
+  border-left: 3px solid var(--yellow);
+  background: var(--surface);
+  border-radius: 0 10px 10px 0;
+  padding: 14px 18px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-muted);
+  margin-bottom: 30px;
+}
+
+/* Form card (Rainy Tech .contact form) */
+.contact-form-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 34px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  box-shadow: var(--shadow-card);
+}
+
+@media (max-width: 640px) {
+  .contact-form-card {
+    padding: 22px;
+  }
+}
+
+/* Form Fields (.field) */
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.field label {
+  font-family: var(--font-heading);
+  font-size: 13px;
+  color: var(--yellow);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.field input, .field select, .field textarea {
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  outline: none;
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 15px;
+  font-family: var(--font-ui);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.field input::placeholder, .field textarea::placeholder {
+  color: #777169;
+}
+
+.field textarea.khmer-input {
+  font-family: var(--font-khmer);
+  font-size: 1.5rem;
+  line-height: 1.6;
+  min-height: 110px;
+  resize: vertical;
+}
+
+.field input:focus, .field select:focus, .field textarea:focus {
+  border-color: var(--yellow);
+  box-shadow: 0 0 0 2px rgba(244, 193, 82, 0.2);
+}
+
+.form-note {
+  font-size: 13px;
+  color: var(--text-muted);
+  text-align: center;
+  margin-top: 4px;
+}
+
+/* Tone preset tags */
+.preset-chips-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.preset-chip {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  color: var(--text);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.preset-chip:hover {
+  border-color: var(--yellow);
+  color: var(--yellow);
+}
+
+.preset-chip.active {
+  background: var(--yellow);
+  color: #171516;
+  border-color: var(--yellow);
+  font-weight: 700;
+}
+
+/* Sample words chips */
+.sample-chips-wrap {
+  margin-top: 24px;
+}
+
+.sample-chips-label {
+  font-family: var(--font-heading);
+  font-size: 13px;
+  color: var(--yellow);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.sample-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.sample-chip {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-family: var(--font-khmer);
+  font-size: 15px;
+  color: var(--text);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.sample-chip:hover {
+  border-color: var(--yellow);
+  color: var(--yellow);
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   Letter Grid Section (Rainy Tech Style Cards)
+   ========================================================================== */
+.letter-grid-section {
+  padding-bottom: 60px;
+}
+
+.section-head {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.section-head h2 {
+  font-size: 38px;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.section-head p {
+  color: var(--text-muted);
+  font-size: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.letters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 16px;
+}
+
+@media (min-width: 900px) {
+  .letters-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+  }
+}
+
+.letter-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.2, 0.9, 0.3, 1.4);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.letter-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--yellow);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4), 0 0 14px rgba(244, 193, 82, 0.2);
+}
+
+.letter-card.playing {
+  border-color: var(--yellow);
+  background: #2b2829;
+  box-shadow: 0 0 0 2px var(--yellow), 0 0 20px rgba(244, 193, 82, 0.4);
+  transform: scale(0.97);
+}
+
+.letter-khmer {
+  font-family: var(--font-khmer);
+  font-size: 52px;
+  line-height: 1.1;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.letter-roman {
+  font-family: var(--font-heading);
+  font-size: 14px;
+  color: var(--yellow);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* ==========================================================================
+   Virtual Keyboard (Rainy Tech Style)
+   ========================================================================== */
+.keyboard-section {
+  margin-top: 24px;
+  background: var(--surface-alt);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.keyboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(44px, 1fr));
+  gap: 8px;
+}
+
+.keyboard-key {
+  font-family: var(--font-khmer);
+  font-size: 20px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+}
+
+.keyboard-key:hover {
+  border-color: var(--yellow);
+  color: var(--yellow);
+  transform: translateY(-2px);
+}
+
+.keyboard-key.action-key {
+  font-family: var(--font-heading);
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   Footer (Rainy Tech Style)
+   ========================================================================== */
+.app-footer {
+  border-top: 1px solid var(--line);
+  padding: 40px 0;
+  text-align: center;
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-top: 60px;
+}
+
+.app-footer a {
+  color: var(--yellow);
+  text-decoration: none;
+}
+
+.app-footer a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,450 @@
+[
+  {
+    "id": "c01",
+    "type": "consonant",
+    "khmer": "ក",
+    "display": "ក",
+    "roman": "kaw",
+    "tts": "ក"
+  },
+  {
+    "id": "c02",
+    "type": "consonant",
+    "khmer": "ខ",
+    "display": "ខ",
+    "roman": "khaw",
+    "tts": "ខ"
+  },
+  {
+    "id": "c03",
+    "type": "consonant",
+    "khmer": "គ",
+    "display": "គ",
+    "roman": "ko",
+    "tts": "គ"
+  },
+  {
+    "id": "c04",
+    "type": "consonant",
+    "khmer": "ឃ",
+    "display": "ឃ",
+    "roman": "kho",
+    "tts": "ឃ"
+  },
+  {
+    "id": "c05",
+    "type": "consonant",
+    "khmer": "ង",
+    "display": "ង",
+    "roman": "ngo",
+    "tts": "ង"
+  },
+  {
+    "id": "c06",
+    "type": "consonant",
+    "khmer": "ច",
+    "display": "ច",
+    "roman": "chaw",
+    "tts": "ច"
+  },
+  {
+    "id": "c07",
+    "type": "consonant",
+    "khmer": "ឆ",
+    "display": "ឆ",
+    "roman": "chhaw",
+    "tts": "ឆ"
+  },
+  {
+    "id": "c08",
+    "type": "consonant",
+    "khmer": "ជ",
+    "display": "ជ",
+    "roman": "cho",
+    "tts": "ជ"
+  },
+  {
+    "id": "c09",
+    "type": "consonant",
+    "khmer": "ឈ",
+    "display": "ឈ",
+    "roman": "chho",
+    "tts": "ឈ"
+  },
+  {
+    "id": "c10",
+    "type": "consonant",
+    "khmer": "ញ",
+    "display": "ញ",
+    "roman": "ño",
+    "tts": "ញ"
+  },
+  {
+    "id": "c11",
+    "type": "consonant",
+    "khmer": "ដ",
+    "display": "ដ",
+    "roman": "daw",
+    "tts": "ដ"
+  },
+  {
+    "id": "c12",
+    "type": "consonant",
+    "khmer": "ឋ",
+    "display": "ឋ",
+    "roman": "thaw",
+    "tts": "ឋ"
+  },
+  {
+    "id": "c13",
+    "type": "consonant",
+    "khmer": "ឌ",
+    "display": "ឌ",
+    "roman": "do",
+    "tts": "ឌ"
+  },
+  {
+    "id": "c14",
+    "type": "consonant",
+    "khmer": "ឍ",
+    "display": "ឍ",
+    "roman": "tho",
+    "tts": "ថធត"
+  },
+  {
+    "id": "c15",
+    "type": "consonant",
+    "khmer": "ណ",
+    "display": "ណ",
+    "roman": "naw",
+    "tts": "ណ"
+  },
+  {
+    "id": "c16",
+    "type": "consonant",
+    "khmer": "ត",
+    "display": "ត",
+    "roman": "taw",
+    "tts": "ត"
+  },
+  {
+    "id": "c17",
+    "type": "consonant",
+    "khmer": "ថ",
+    "display": "ថ",
+    "roman": "thaw",
+    "tts": "ថ"
+  },
+  {
+    "id": "c18",
+    "type": "consonant",
+    "khmer": "ទ",
+    "display": "ទ",
+    "roman": "to",
+    "tts": "ទ"
+  },
+  {
+    "id": "c19",
+    "type": "consonant",
+    "khmer": "ធ",
+    "display": "ធ",
+    "roman": "tho",
+    "tts": "ធ"
+  },
+  {
+    "id": "c20",
+    "type": "consonant",
+    "khmer": "ន",
+    "display": "ន",
+    "roman": "no",
+    "tts": "ន"
+  },
+  {
+    "id": "c21",
+    "type": "consonant",
+    "khmer": "ប",
+    "display": "ប",
+    "roman": "baw",
+    "tts": "ប"
+  },
+  {
+    "id": "c22",
+    "type": "consonant",
+    "khmer": "ផ",
+    "display": "ផ",
+    "roman": "phaw",
+    "tts": "ផ"
+  },
+  {
+    "id": "c23",
+    "type": "consonant",
+    "khmer": "ព",
+    "display": "ព",
+    "roman": "po",
+    "tts": "ព"
+  },
+  {
+    "id": "c24",
+    "type": "consonant",
+    "khmer": "ភ",
+    "display": "ភ",
+    "roman": "pho",
+    "tts": "ភ"
+  },
+  {
+    "id": "c25",
+    "type": "consonant",
+    "khmer": "ម",
+    "display": "ម",
+    "roman": "mo",
+    "tts": "ម"
+  },
+  {
+    "id": "c26",
+    "type": "consonant",
+    "khmer": "យ",
+    "display": "យ",
+    "roman": "yo",
+    "tts": "យ"
+  },
+  {
+    "id": "c27",
+    "type": "consonant",
+    "khmer": "រ",
+    "display": "រ",
+    "roman": "ro",
+    "tts": "រ"
+  },
+  {
+    "id": "c28",
+    "type": "consonant",
+    "khmer": "ល",
+    "display": "ល",
+    "roman": "lo",
+    "tts": "ល"
+  },
+  {
+    "id": "c29",
+    "type": "consonant",
+    "khmer": "វ",
+    "display": "វ",
+    "roman": "vo",
+    "tts": "វ"
+  },
+  {
+    "id": "c30",
+    "type": "consonant",
+    "khmer": "ស",
+    "display": "ស",
+    "roman": "saw",
+    "tts": "ស"
+  },
+  {
+    "id": "c31",
+    "type": "consonant",
+    "khmer": "ហ",
+    "display": "ហ",
+    "roman": "haw",
+    "tts": "ហ"
+  },
+  {
+    "id": "c32",
+    "type": "consonant",
+    "khmer": "ឡ",
+    "display": "ឡ",
+    "roman": "law",
+    "tts": "ឡ"
+  },
+  {
+    "id": "c33",
+    "type": "consonant",
+    "khmer": "អ",
+    "display": "អ",
+    "roman": "awq",
+    "tts": "អ"
+  },
+  {
+    "id": "v01",
+    "type": "vowel",
+    "khmer": "ា",
+    "display": "ា",
+    "roman": "",
+    "tts": "កា"
+  },
+  {
+    "id": "v02",
+    "type": "vowel",
+    "khmer": "ិ",
+    "display": "ិ",
+    "roman": "",
+    "tts": "កិ"
+  },
+  {
+    "id": "v03",
+    "type": "vowel",
+    "khmer": "ី",
+    "display": "ី",
+    "roman": "",
+    "tts": "កី"
+  },
+  {
+    "id": "v04",
+    "type": "vowel",
+    "khmer": "ឹ",
+    "display": "ឹ",
+    "roman": "",
+    "tts": "កឹ"
+  },
+  {
+    "id": "v05",
+    "type": "vowel",
+    "khmer": "ឺ",
+    "display": "ឺ",
+    "roman": "",
+    "tts": "កឺ"
+  },
+  {
+    "id": "v06",
+    "type": "vowel",
+    "khmer": "ុ",
+    "display": "ុ",
+    "roman": "",
+    "tts": "កុ"
+  },
+  {
+    "id": "v07",
+    "type": "vowel",
+    "khmer": "ូ",
+    "display": "ូ",
+    "roman": "",
+    "tts": "កូ"
+  },
+  {
+    "id": "v08",
+    "type": "vowel",
+    "khmer": "ួ",
+    "display": "ួ",
+    "roman": "",
+    "tts": "កួ"
+  },
+  {
+    "id": "v09",
+    "type": "vowel",
+    "khmer": "ើ",
+    "display": "ើ",
+    "roman": "",
+    "tts": "កើ"
+  },
+  {
+    "id": "v10",
+    "type": "vowel",
+    "khmer": "ឿ",
+    "display": "ឿ",
+    "roman": "",
+    "tts": "កឿ"
+  },
+  {
+    "id": "v11",
+    "type": "vowel",
+    "khmer": "ៀ",
+    "display": "ៀ",
+    "roman": "",
+    "tts": "កៀ"
+  },
+  {
+    "id": "v12",
+    "type": "vowel",
+    "khmer": "េ",
+    "display": "េ",
+    "roman": "",
+    "tts": "កេ"
+  },
+  {
+    "id": "v13",
+    "type": "vowel",
+    "khmer": "ែ",
+    "display": "ែ",
+    "roman": "",
+    "tts": "កែ"
+  },
+  {
+    "id": "v14",
+    "type": "vowel",
+    "khmer": "ៃ",
+    "display": "ៃ",
+    "roman": "",
+    "tts": "កៃ"
+  },
+  {
+    "id": "v15",
+    "type": "vowel",
+    "khmer": "ោ",
+    "display": "ោ",
+    "roman": "",
+    "tts": "កោ"
+  },
+  {
+    "id": "v16",
+    "type": "vowel",
+    "khmer": "ៅ",
+    "display": "ៅ",
+    "roman": "",
+    "tts": "កៅ"
+  },
+  {
+    "id": "v17",
+    "type": "vowel",
+    "khmer": "ុំ",
+    "display": "ុំ",
+    "roman": "",
+    "tts": "កុំ"
+  },
+  {
+    "id": "v18",
+    "type": "vowel",
+    "khmer": "ំ",
+    "display": "ំ",
+    "roman": "",
+    "tts": "កំ"
+  },
+  {
+    "id": "v19",
+    "type": "vowel",
+    "khmer": "ាំ",
+    "display": "ាំ",
+    "roman": "",
+    "tts": "កាំ"
+  },
+  {
+    "id": "v20",
+    "type": "vowel",
+    "khmer": "ះ",
+    "display": "ះ",
+    "roman": "",
+    "tts": "កះ"
+  },
+  {
+    "id": "v21",
+    "type": "vowel",
+    "khmer": "ុះ",
+    "display": "ុះ",
+    "roman": "",
+    "tts": "កុះ"
+  },
+  {
+    "id": "v22",
+    "type": "vowel",
+    "khmer": "េះ",
+    "display": "េះ",
+    "roman": "",
+    "tts": "កេះ"
+  },
+  {
+    "id": "v23",
+    "type": "vowel",
+    "khmer": "ោះ",
+    "display": "ោះ",
+    "roman": "",
+    "tts": "កោះ"
+  }
+]
